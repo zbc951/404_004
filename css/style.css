@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+  font-family: "微軟正黑體";
+  cursor: pointer;
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main {
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  display: block;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+@font-face {
+  font-family: myCustomFont;
+  src: url("../font/jetlink boldsemiblack .TTF") format("truetype");
+}
+html {
+  width: 100%;
+  height: 100%;
+  background: #f6f7fc;
+}
+html body {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+html body main .maintain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 34px 0 45px;
+}
+html body main .maintain .maintainBox {
+  width: 460px;
+  margin-right: 40px;
+}
+html body main .maintain .maintainBox .maintainTextBox {
+  width: 390px;
+}
+html body main .maintain .maintainBox .maintainTextBox .maintainText {
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+html body main .maintain .maintainBox .maintainTextBox .maintainText.maintainText--num {
+  font-family: "Poppins", sans-serif;
+  background: -webkit-gradient(linear, left bottom, left top, from(#660015), color-stop(50%, #d51433), to(#660015));
+  background: linear-gradient(to top, #660015 0%, #d51433 50%, #660015 100%);
+  color: transparent;
+  text-shadow: -5px -4px 1px #ee2023;
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 193px;
+  margin-bottom: 27px;
+}
+html body main .maintain .maintainBox .maintainTextBox .maintainText.maintainText--num::before {
+  background: url("../img/404_shadow.png") no-repeat bottom center;
+  background-size: contain;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 49%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+html body main .maintain .maintainBox .maintainTextBox .maintainText.maintainText--en {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2509803922);
+  color: #f48a00;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+html body main .maintain .maintainBox .maintainTextBox .maintainText.maintainText--ch {
+  color: #252525;
+}
+html body main .maintain .maintainBox .maintainTextBox .maintainText.maintainText--ch.maintainText--ch__top {
+  font-size: 74px;
+  text-shadow: 2px 0px 0px #252525;
+  margin-bottom: 15px;
+}
+html body main .maintain .maintainBox .maintainTextBox .maintainText.maintainText--ch.maintainText--ch__bottom {
+  font-size: 44px;
+  text-shadow: 2px 0px 0px #252525;
+  margin-bottom: 44px;
+}
+html body main .maintain .maintainBox .maintainInfo {
+  color: #252525;
+  font-size: 24px;
+  text-align: end;
+  margin-bottom: 66px;
+}
+html body main .maintain .maintainBox .logo {
+  text-align: end;
+}
+html body main .maintain .maintainBox .logo > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body main .maintain .human {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-top: 42px;
+  position: relative;
+}
+html body main .maintain .human > .man {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body main .maintain .human > .tools {
+  width: 395px;
+  height: 176px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -5;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body .filter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  pointer-events: none;
+}
+html body .filter .bg {
+  background: url("../img/bg.png") repeat-x;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  -webkit-animation: bgAnimation 3s linear 0s infinite normal forwards;
+          animation: bgAnimation 3s linear 0s infinite normal forwards;
+}
+@-webkit-keyframes bgAnimation {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1920px;
+  }
+}
+@keyframes bgAnimation {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1920px;
+  }
+}
